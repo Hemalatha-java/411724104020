@@ -1,0 +1,86 @@
+/* Mobile First */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+/* Desktop Navbar */
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        gap: 30px;
+    }
+}
+
+/* Image */
+img {
+    width: 300px;
+    border-radius: 50px; /* Even roll number */
+}
+
+/* Video */
+video {
+    width: 50vw;
+    background-color: blue;
+    padding: 10px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid gray;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Button */
+button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Grid - Desktop First */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.box {
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
